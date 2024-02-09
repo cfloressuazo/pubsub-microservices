@@ -1,6 +1,6 @@
 # Flask-specific configurations
 DEBUG = False
-SECRET_KEY = '8d39f0c6befb60ac7d62885d617a6bee'
+SECRET_KEY = 'SOME-SECRET-KEY'
 SESSION_COOKIE_SECURE = False
 
 # Flask-user configurations
@@ -13,7 +13,7 @@ USER_REQUIRE_RETYPE_PASSWORD = False
 YBDB_USER = 'admin'
 YBDB_PASSWORD = 'admin-pwd'
 YBDB_CERTS = '../../certs/root.crt'
-YBDB_HOST = 'us-east-1.de9da17e-994d-49c3-9418-eec104edeeeb.aws.ybdb.io'
+YBDB_HOST = 'localhost'
 YBDB_PORT = 5433
 YBDB_DB = 'admin'
 SQLALCHEMY_DATABASE_URI = f'postgresql://{YBDB_USER}:{YBDB_PASSWORD}@{YBDB_HOST}:{YBDB_PORT}/{YBDB_DB}?sslmode=verify-full&sslrootcert={YBDB_CERTS}'

@@ -18,13 +18,14 @@ You can navigate to the urls of each microservice and play around with their end
 
 
 # YugabyteDB Connection
+To deploy your own cluster, go to [yugabytedb](https://www.yugabyte.com/), signup and create your own cluster for free.
 To connect to YBDB through the CLI, install ysqlsh tool and then run:
 ```bash
-ysqlsh "host=us-east-1.ea53f2e6-4666-4fce-999c-2f7d7fc6b4ea.aws.ybdb.io \
+ysqlsh "host=localhost \
 user=admin \
-dbname=yugabyte \
+dbname=admin \
 sslmode=verify-full \
-sslrootcert=./certs/root.crt"
+sslrootcert=<your-cert-path-here>"
 ```
 Replace the following:
 1. <DB USER> with your database username. You will be prompted for the password after the connection is established.
