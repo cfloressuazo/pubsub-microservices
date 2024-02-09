@@ -10,12 +10,12 @@ USER_ENABLE_USERNAME = True
 USER_REQUIRE_RETYPE_PASSWORD = False
 
 # YugabyteDB configurations
-YBDB_USER = 'qdt'
-YBDB_PASSWORD = 'QDTSuperSecretPassword'
-YBDB_CERTS = '/Users/cesar/workspaces/pubsub-microservices/certs/root.crt'
+YBDB_USER = 'admin'
+YBDB_PASSWORD = 'admin-pwd'
+YBDB_CERTS = '../../certs/root.crt'
 YBDB_HOST = 'us-east-1.de9da17e-994d-49c3-9418-eec104edeeeb.aws.ybdb.io'
 YBDB_PORT = 5433
-YBDB_DB = 'qdt'
+YBDB_DB = 'admin'
 SQLALCHEMY_DATABASE_URI = f'postgresql://{YBDB_USER}:{YBDB_PASSWORD}@{YBDB_HOST}:{YBDB_PORT}/{YBDB_DB}?sslmode=verify-full&sslrootcert={YBDB_CERTS}'
 
 # Redis configuration (if your app uses Redis)
